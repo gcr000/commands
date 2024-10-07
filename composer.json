@@ -1,0 +1,23 @@
+{
+  "name": "gcr000/commands",
+  "description": "Una libreria personalizzata per Laravel creata da Giancarlo Uzzo",
+  "type": "library",
+  "autoload": {
+    "psr-4": {
+      "Gcr000\\Commands\\": "src/"
+    }
+  },
+  "require": {
+    "php": ">=7.4",
+    "illuminate/support": "^9.0"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Gcr000\\Commands\\PrimaLibreriaServiceProvider"
+      ]
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
