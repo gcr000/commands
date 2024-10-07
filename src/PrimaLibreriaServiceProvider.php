@@ -3,6 +3,7 @@
 namespace Gcr000\Commands;
 
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\Facades\Log;
 
 class PrimaLibreriaServiceProvider extends ServiceProvider
 {
@@ -33,5 +34,10 @@ class PrimaLibreriaServiceProvider extends ServiceProvider
     public function register()
     {
         // Registrare le binding nel container, se necessario
+    }
+
+    public function logMessage($message)
+    {
+        Log::info("Messaggio dal package PrimaLibreria: " . $message);
     }
 }
